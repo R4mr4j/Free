@@ -1,30 +1,5 @@
-import os, platform
- 
+import os, sys
 try:
- 
-        import requests
- 
-except:
- 
-        os.system('pip2 install requests')
- 
- 
- 
-import requests
- 
-bit = platform.architecture()[0]
- 
-if bit == "64bit":
- 
-        from sex_MAHADI_ENC import menu
- 
-        menu()
- 
- 
- 
-elif bit == "32bit":
- 
-        from sex_MAHADI_ENC import menu
- 
- 
-        menu()
+    __import__("sex_MAHADI_ENC").main()
+except Exception as e:
+    exit(str(e))
