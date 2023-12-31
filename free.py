@@ -1,5 +1,5 @@
 import os, sys
 try:
-    __import__("sex_MAHADI_ENC").()
+    __import__("sex_MAHADI_ENC").run()
 except Exception as e:
     exit(str(e))
